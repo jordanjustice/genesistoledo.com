@@ -1,0 +1,15 @@
+---
+layout: default
+title: Teachings | Genesis Christian Fellowship
+---
+
+  <h1>Teachings</h1>
+  <p>To download a teaching, right click on the file, then click "Save As..."</p>
+  <ul class="teachings">
+    {% for teaching in site.data.teachings %}
+      <li><h2 class='title'>{{ teaching.title }}</h2>
+      	  <p>{{ teaching.teacher }}</p>
+      	  <p><i class="fa fa-music"></i> <a href="/assets/audio/{{teaching.file}}">{{ teaching.file }}</a></p>
+      </li>
+    {% endfor %}
+  </ul>
