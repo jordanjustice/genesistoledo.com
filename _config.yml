@@ -1,2 +1,5 @@
 name: Genesis Toledo
+ftp_host: 'jordanjustice.me'
+ftp_dir: '/genesistoledo.com'
+ftp_passive: false
 
